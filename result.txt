@@ -1,0 +1,169 @@
+Linha: 1
+[reserved_word, #include] [standard_library, <stdio.h>]
+Linha: 2
+[reserved_word, #include] [standard_library, <conio.h>]
+Linha: 3
+
+Linha: 4
+[reserved_word, void] [id, 0] [l_paren, (] [r_paren, )]
+Linha: 5
+[l_bracket, {]
+Linha: 6
+[reserved_word, float] [id, 1] [comma, ,] [id, 2] [semicolon, ;]
+Linha: 7
+[reserved_word, float] [id, 3] [semicolon, ;]
+Linha: 8
+
+Linha: 9
+[reserved_word, clrscr] [l_paren, (] [r_paren, )] [semicolon, ;]
+Linha: 10
+[id, 1] [equal, =] [num, 6.6] [semicolon, ;]
+Linha: 11
+[id, 2] [equal, =] [num, 8.2] [semicolon, ;]
+Linha: 12
+
+Linha: 13
+[id, 3] [equal, =] [l_paren, (] [id, 1] [arith_op, +] [id, 2] [r_paren, )] [arith_op, /] [num, 2.0] [semicolon, ;]
+Linha: 14
+
+Linha: 15
+[reserved_word, printf] [l_paren, (] [string_literal, "MÃ©dia Final : %6.3f"] [comma, ,] [id, 3] [r_paren, )] [semicolon, ;]
+Linha: 16
+
+Linha: 19
+[reserved_word, getch] [l_paren, (] [r_paren, )] [semicolon, ;]
+Linha: 20
+[r_bracket, }]
+Linha: 21
+
+Linha: 22
+[reserved_word, int] [id, 4] [l_paren, (] [r_paren, )]
+Linha: 23
+[l_bracket, {]
+Linha: 24
+[reserved_word, int] [id, 5] [semicolon, ;]
+Linha: 25
+[reserved_word, string] [id, 6] [semicolon, ;]
+Linha: 26
+
+Linha: 27
+[reserved_word, printf] [l_paren, (] [string_literal, "Digite um nÃºmero: "] [r_paren, )] [semicolon, ;]
+Linha: 28
+[reserved_word, scanf] [l_paren, (] [string_literal, "%d"] [comma, ,] [amp, &] [id, 5] [r_paren, )] [semicolon, ;]
+Linha: 29
+
+Linha: 30
+[reserved_word, if] [l_paren, (] [id, 5] [relational_op, >] [num, 10] [r_paren, )]
+Linha: 31
+[l_bracket, {]
+Linha: 32
+[reserved_word, printf] [l_paren, (] [string_literal, "\n\n O nÃºmero Ã© maior que 10"] [r_paren, )] [semicolon, ;]
+Linha: 33
+[id, 6] [equal, =] [string_literal, "errou"] [semicolon, ;]
+Linha: 34
+[r_bracket, }]
+Linha: 35
+[reserved_word, if] [l_paren, (] [id, 5] [relational_op, ==] [num, 10] [r_paren, )]
+Linha: 36
+[l_bracket, {]
+Linha: 37
+[reserved_word, printf] [l_paren, (] [string_literal, "\n\n VocÃª acertou!\n"] [r_paren, )] [semicolon, ;]
+Linha: 38
+[reserved_word, printf] [l_paren, (] [string_literal, "O numero Ã© igual a 10."] [r_paren, )] [semicolon, ;]
+Linha: 39
+[id, 6] [equal, =] [string_literal, "acertou"] [semicolon, ;]
+Linha: 40
+[r_bracket, }]
+Linha: 41
+[reserved_word, if] [l_paren, (] [id, 5] [relational_op, <] [num, 10] [r_paren, )]
+Linha: 42
+[l_bracket, {]
+Linha: 43
+[reserved_word, printf] [l_paren, (] [string_literal, "\n\n O nÃºmero Ã© menor que 10"] [r_paren, )] [semicolon, ;]
+Linha: 44
+[id, 6] [equal, =] [string_literal, "errou"] [semicolon, ;]
+Linha: 45
+[r_bracket, }]
+Linha: 46
+[reserved_word, if] [l_paren, (] [id, 5] [relational_op, ==] [num, 10] [logic_op, &&] [id, 6] [relational_op, ==] [string_literal, "acertou"] [r_paren, )]
+Linha: 47
+[l_bracket, {]
+Linha: 48
+[reserved_word, return] [num, 1] [semicolon, ;]
+Linha: 49
+[r_bracket, }]
+Linha: 50
+[reserved_word, return] [num, 0] [semicolon, ;]
+Linha: 51
+[r_bracket, }]
+Linha: 52
+[reserved_word, void] [id, 7] [l_paren, (] [reserved_word, int] [arith_op, *] [id, 8] [comma, ,] [reserved_word, int] [id, 9] [r_paren, )]
+Linha: 53
+[l_bracket, {]
+Linha: 54
+[reserved_word, int] [id, 10] [semicolon, ;]
+Linha: 55
+
+Linha: 56
+[reserved_word, if] [l_paren, (] [id, 8] [relational_op, !=] [reserved_word, NULL] [r_paren, )]
+Linha: 57
+[l_bracket, {]
+Linha: 58
+[reserved_word, for] [l_paren, (] [id, 10] [equal, =] [num, 0] [semicolon, ;] [id, 10] [relational_op, <] [id, 9] [semicolon, ;] [id, 10] [arith_op, ++] [r_paren, )]
+Linha: 59
+[l_bracket, {]
+Linha: 60
+[arith_op, *] [l_paren, (] [id, 8] [r_paren, )] [equal, =] [arith_op, *] [l_paren, (] [id, 8] [r_paren, )] [arith_op, *] [num, 2] [semicolon, ;]
+Linha: 61
+[id, 8] [arith_op, ++] [semicolon, ;]
+Linha: 62
+[r_bracket, }]
+Linha: 63
+[r_bracket, }]
+Linha: 64
+[r_bracket, }]
+Linha: 65
+
+Linha: 66
+[reserved_word, int] [id, 11] [l_paren, (] [r_paren, )]
+Linha: 67
+[l_bracket, {]
+Linha: 68
+[reserved_word, int] [id, 12] [l_sq_bracket, [] [r_sq_bracket, ]] [equal, =] [l_bracket, {] [num, 5] [comma, ,] [num, 10] [comma, ,] [num, 15] [comma, ,] [num, 3] [comma, ,] [num, 10] [comma, ,] [num, 76] [comma, ,] [num, 5] [comma, ,] [num, 13] [comma, ,] [num, 33] [comma, ,] [num, 45] [r_bracket, }] [semicolon, ;]
+Linha: 69
+[reserved_word, int] [arith_op, *] [id, 13] [semicolon, ;]
+Linha: 70
+[reserved_word, int] [id, 14] [semicolon, ;]
+Linha: 71
+
+Linha: 72
+[id, 13] [equal, =] [id, 12] [semicolon, ;]
+Linha: 73
+
+Linha: 74
+[id, 7] [l_paren, (] [id, 12] [comma, ,] [num, 10] [r_paren, )] [semicolon, ;]
+Linha: 75
+
+Linha: 76
+[reserved_word, for] [l_paren, (] [reserved_word, int] [id, 15] [equal, =] [num, 0] [semicolon, ;] [id, 15] [relational_op, <] [num, 10] [semicolon, ;] [id, 15] [arith_op, ++] [r_paren, )]
+Linha: 77
+[l_bracket, {]
+Linha: 78
+[reserved_word, printf] [l_paren, (] [string_literal, "V[%i] = %i\r\n"] [comma, ,] [id, 15] [comma, ,] [arith_op, *] [l_paren, (] [id, 13] [arith_op, +] [id, 15] [r_paren, )] [r_paren, )] [semicolon, ;]
+Linha: 79
+[r_bracket, }]
+Linha: 80
+
+Linha: 81
+[id, 0] [l_paren, (] [r_paren, )] [semicolon, ;]
+Linha: 82
+[id, 4] [l_paren, (] [r_paren, )] [semicolon, ;]
+Linha: 83
+
+Linha: 84
+[reserved_word, return] [num, 0] [semicolon, ;]
+Linha: 85
+[r_bracket, }]
+Linha: 86
+
+Linha: 87
