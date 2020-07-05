@@ -2,6 +2,8 @@
 
 Aplicação do trabalho de análise léxica da cadeira de Tradutores.
 
+Especificação do trabalho segue no arquivo `Trabalho GA.pdf`.
+
 ### Programas necessários
 
 - JDK 8 ou superior.
